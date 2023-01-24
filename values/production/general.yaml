@@ -1,0 +1,2 @@
+imageRegistries:
+  k8sGCR: cr-cache.example-domain/k8s.gcr.io

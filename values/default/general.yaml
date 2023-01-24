@@ -1,0 +1,5 @@
+namespaces:
+  nginx: ingress-nginx
+
+imageRegistries:
+  k8sGCR: k8s.gcr.io

@@ -1,0 +1,10 @@
+defaultBackend:
+  image:
+    registry: {{ .Values.imageRegistries.k8sGCR }}
+controller:
+  image:
+    registry: {{ .Values.imageRegistries.k8sGCR }}
+  admissionWebhooks:
+    patch:
+      image:
+        registry: {{ .Values.imageRegistries.k8sGCR }}

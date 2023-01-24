@@ -1,0 +1,15 @@
+bases:
+  - ./configuration/repositories.yaml
+  - ./configuration/environments.yaml
+
+---
+
+releases:
+  - name: ingress-nginx
+    namespace: {{ .Values.namespaces.nginx }}
+    labels:
+      tier: static
+    chart: "ingress-nginx/ingress-nginx"
+    version: {{ .Values.versions.nginx }}
+    values:
+      - ../services/ingress-controller/values.yaml.gotmpl

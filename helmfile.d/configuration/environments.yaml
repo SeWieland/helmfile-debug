@@ -1,0 +1,13 @@
+environments:
+  development:
+    values:
+    - ../values/default/general.yaml
+    - ../values/development/general.yaml
+    - ../values/development/versions.yaml
+    kubeContext: dev-cluster
+  production:
+    values:
+    - ../values/default/general.yaml
+    - ../values/production/general.yaml
+    - ../values/production/versions.yaml
+    kubeContext: prod-cluster
